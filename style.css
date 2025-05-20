@@ -8,8 +8,7 @@ body, html {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
-  position: relative;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .background {
@@ -21,10 +20,44 @@ body, html {
   z-index: -1;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #0fd;
+}
+
 header {
-  padding: 2rem;
+  padding: 2.5rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(4px);
 }
 
@@ -38,8 +71,14 @@ header {
 
 .contact-form {
   display: flex;
-  justify-content: center;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 form {
@@ -64,7 +103,7 @@ form textarea {
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   color: #000;
 }
 
@@ -85,7 +124,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #005f60;
+  background-color: #007d80;
 }
 
 footer {
@@ -94,4 +133,5 @@ footer {
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
   font-size: 0.9rem;
+  margin-top: 2rem;
 }
