@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Alaska Energy Infrastructure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/2/28/Windy_Bay_forest.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    .overlay {
+      backdrop-filter: blur(6px);
+      background-color: rgba(0, 50, 0, 0.4);
+      min-height: 100vh;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .nav {
+      background: rgba(0, 50, 0, 0.85);
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+    }
+    .nav .home {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #fff;
+      text-decoration: none;
+    }
+    .container {
+      margin: 2em auto;
+      background: rgba(255, 255, 255, 0.7);
+      color: #000;
+      padding: 2em;
+      border-radius: 16px;
+      max-width: 700px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .contact-info {
+      margin-bottom: 2em;
+    }
+    .contact-info p {
+      margin: 0.5em 0;
+    }
+    .contact-info a {
+      color: #003200;
+      text-decoration: underline;
+    }
+    form {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    form label {
+      display: block;
+      text-align: left;
+      margin-bottom: 1em;
+      font-weight: bold;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.75em;
+      margin-top: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Roboto', sans-serif;
+    }
+    form button {
+      margin-top: 1em;
+      padding: 0.75em 1.5em;
+      background-color: #003200;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    form button:hover {
+      background-color: #005000;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 0;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav class="nav">
+      <a href="index.html" class="home">Home</a>
+    </nav>
+
+    <div class="container">
+      <h1>Contact</h1>
+      <div class="contact-info">
+        <p><strong>Ariel E Hasse-Zamudio</strong></p>
+        <p>Executive Director</p>
+        <p>Email: {ariel} {@} {sustainablesciencepolicyalaska} {.} {org}</p>
+        <p>Phone: {907} {390} {0847}</p>
+        <p><a href="https://www.linkedin.com/in/ariel-hasse-zamudio-67752974/" target="_blank">LinkedIn</a></p>
+        <p><a href="https://bsky.app/profile/hasse-zamudio.bsky.social" target="_blank">Bluesky: @hasse-zamudio.bsky.social</a></p>
+        <p><a href="https://www.instagram.com/hasse_zamudio/" target="_blank">Instagram: @hasse_zamudio</a></p>
+        <p><a href="https://facebook.com/ariel.hasse.5" target="_blank">Facebook</a></p>
+      </div>
+
+      <h2>Contact Form</h2>
+      <form action="https://formspree.io/f/xvgankzw" method="POST">
+        <label>
+          Your Name:
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Your Email:
+          <input type="email" name="_replyto" required>
+        </label>
+        <label>
+          Your Message:
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>© 2025 Alaska Energy Infrastructure. All rights reserved.</p>
+      <p>This work was supported by Milton and Rosalind Chang Career Exploration Prize from Caltech | Designed Locally In Alaska</p>
+    </footer>
+  </div>
+</body>
+</html>
