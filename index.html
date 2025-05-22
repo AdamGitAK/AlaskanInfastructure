@@ -12,114 +12,142 @@
       font-family: 'Roboto', sans-serif;
       background: url('rainforest.jpg') no-repeat center center fixed;
       background-size: cover;
-      backdrop-filter: blur(4px);
+      backdrop-filter: blur(6px);
       color: #fff;
     }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 2em;
+    }
+
     .nav {
-      background: rgba(0, 50, 0, 0.85);
-      padding: 1em;
+      background: rgba(0, 50, 0, 0.9);
+      padding: 1em 2em;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-radius: 12px;
     }
+
     .nav a {
       color: white;
       margin: 0 1em;
       text-decoration: none;
       font-weight: bold;
     }
+
     .container {
-      margin: 2em;
-      background: rgba(255, 255, 255, 0.9);
+      max-width: 900px;
+      margin: 2em auto;
+      background: rgba(255, 255, 255, 0.95);
       color: #000;
       padding: 2em;
-      border-radius: 12px;
-      box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+      border-radius: 16px;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
     }
+
     .tab-buttons {
       display: flex;
-      gap: 1em;
+      flex-wrap: wrap;
+      gap: 0.5em;
       margin-bottom: 1em;
     }
+
     .tab-buttons button {
-      padding: 0.5em 1em;
+      padding: 0.6em 1.2em;
       border: none;
-      border-radius: 8px;
-      background-color: #2f6f2f;
+      border-radius: 6px;
+      background-color: #2e7d32;
       color: white;
+      font-weight: bold;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
+
+    .tab-buttons button:hover {
+      background-color: #1b5e20;
+    }
+
     .tab-content {
       display: none;
     }
+
     .tab-content.active {
       display: block;
     }
-    .login {
-      margin-top: 2em;
-    }
+
     .login input {
       display: block;
       margin: 0.5em 0;
-      padding: 0.5em;
+      padding: 0.6em;
       width: 100%;
+      border: 1px solid #aaa;
+      border-radius: 6px;
     }
+
     footer {
       text-align: center;
       padding: 2em;
       color: #ccc;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <nav class="nav">
-    <div>AEI</div>
-    <div>
-      <a href="#">AERN-login</a>
-      <a href="#">Contact</a>
-    </div>
-  </nav>
+  <div class="overlay">
+    <nav class="nav">
+      <div><strong>AEI</strong></div>
+      <div>
+        <a href="#" onclick="showTab('aern')">AERN Login</a>
+        <a href="#" onclick="showTab('contact')">Contact</a>
+      </div>
+    </nav>
 
-  <div class="container">
-    <h1>Alaska Energy Infrastructure</h1>
-    <p><em>"The Alaska Energy Regeneration (AER) project is a statewide initiative aimed at advancing sustainable living in response to the escalating climate crisis. Spanning 375 million acres and home to over 740,000 residents across 200+ remote communities, Alaska faces unique challenges in transitioning to renewable energy. AER will develop tailored, community-driven sustainability solutions through data collection, applied research, and policy development. Sustainability Assessments (SAs)—conducted via focus groups, surveys, and town halls with the guidance of Indigenous communities—will provide insights into existing practices and environmental needs. Findings will be shared in real time through the Alaska Energy Regeneration Network (AERN), a collaborative platform connecting residents, researchers, and decision-makers. A strong digital presence will support ongoing public engagement. The project will culminate in the Alaska Energy Regeneration 2025 Report, offering actionable, evidence-based policy alternatives ahead of the 2026 legislative session. AER invites collaboration from a wide range of stakeholders committed to a resilient, sustainable future for Alaska."</em></p>
-    <p>Welcome to the AEI portal, your source for data, updates, and initiatives.</p>
+    <div class="container">
+      <h1>Alaska Energy Infrastructure</h1>
+      <p><em>The Alaska Energy Regeneration (AER) project is a statewide initiative aimed at advancing sustainable living in response to the escalating climate crisis...</em></p>
+      <p>Welcome to the AEI portal, your source for data, updates, and initiatives.</p>
 
-    <div class="tab-buttons">
-      <button onclick="showTab('reports')">Reports</button>
-      <button onclick="showTab('status')">Status</button>
-      <button onclick="showTab('background')">Background</button>
-      <button onclick="showTab('preload')">Preload Data</button>
+      <div class="tab-buttons">
+        <button onclick="showTab('status')">Status</button>
+        <button onclick="showTab('background')">Background</button>
+        <button onclick="showTab('preload')">Preload Data</button>
+      </div>
+
+      <div id="status" class="tab-content active">
+        <h2>Roadmap</h2>
+        <p>[Overview of AEI status]</p>
+      </div>
+
+      <div id="background" class="tab-content">
+        <h2>Background</h2>
+        <p>[History and context]</p>
+      </div>
+
+      <div id="preload" class="tab-content">
+        <h2>Preloaded Data</h2>
+        <p>[Quick data summaries]</p>
+      </div>
+
+      <div id="aern" class="tab-content">
+        <h3>AERN Login</h3>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+      </div>
+
+      <div id="contact" class="tab-content">
+        <h3>Contact</h3>
+        <p>[Contact form or details]</p>
+      </div>
     </div>
 
-    <div id="reports" class="tab-content active">
-      <h2>Reports</h2>
-      <p>[Summary of recent reports]</p>
-    </div>
-    <div id="status" class="tab-content">
-      <h2>Roadmap</h2>
-      <p>[Overview of AEI status]</p>
-    </div>
-    <div id="background" class="tab-content">
-      <h2>Background</h2>
-      <p>[History and context]</p>
-    </div>
-    <div id="preload" class="tab-content">
-      <h2>Preloaded Data</h2>
-      <p>[Quick data summaries]</p>
-    </div>
-
-    <div class="login">
-      <h3>AERN Login</h3>
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
-    </div>
+    <footer>
+      <p>© 2025 Alaska Energy Infrastructure. All rights reserved.</p>
+      <p>Milton and Rosalind Chang Career Exploration Prize | Designed locally in Alaska</p>
+    </footer>
   </div>
-
-  <footer>
-    <p>© 2025 Alaska Energy Infrastructure. All rights reserved.</p>
-    <p>Milton and Rosalind Chang Career Exploration Prize | Designed locally in Alaska</p>
-  </footer>
 
   <script>
     function showTab(id) {
