@@ -10,83 +10,72 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: url('rainforest.jpg') no-repeat center center fixed;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Temperate_rainforest_in_the_Pacific_Rim_National_Park.jpg/1280px-Temperate_rainforest_in_the_Pacific_Rim_National_Park.jpg') no-repeat center center fixed;
       background-size: cover;
-      backdrop-filter: blur(6px);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
       color: #fff;
     }
-
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
       min-height: 100vh;
       padding: 2em;
     }
-
     .nav {
-      background: rgba(0, 50, 0, 0.9);
-      padding: 1em 2em;
+      background: rgba(0, 50, 0, 0.85);
+      padding: 1em;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-radius: 12px;
     }
-
     .nav a {
       color: white;
       margin: 0 1em;
       text-decoration: none;
       font-weight: bold;
     }
-
     .container {
-      max-width: 900px;
-      margin: 2em auto;
+      margin-top: 2em;
       background: rgba(255, 255, 255, 0.95);
       color: #000;
       padding: 2em;
-      border-radius: 16px;
-      box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+      border-radius: 12px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
     }
-
     .tab-buttons {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5em;
+      gap: 1em;
       margin-bottom: 1em;
+      flex-wrap: wrap;
     }
-
     .tab-buttons button {
-      padding: 0.6em 1.2em;
+      padding: 0.5em 1em;
       border: none;
-      border-radius: 6px;
-      background-color: #2e7d32;
+      border-radius: 8px;
+      background-color: #2f6f2f;
       color: white;
-      font-weight: bold;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      font-weight: bold;
     }
-
     .tab-buttons button:hover {
-      background-color: #1b5e20;
+      background-color: #3d8041;
     }
-
     .tab-content {
       display: none;
     }
-
     .tab-content.active {
       display: block;
     }
-
     .login input {
       display: block;
       margin: 0.5em 0;
-      padding: 0.6em;
+      padding: 0.5em;
       width: 100%;
-      border: 1px solid #aaa;
-      border-radius: 6px;
     }
-
     footer {
       text-align: center;
       padding: 2em;
@@ -107,16 +96,21 @@
 
     <div class="container">
       <h1>Alaska Energy Infrastructure</h1>
-      <p><em>The Alaska Energy Regeneration (AER) project is a statewide initiative aimed at advancing sustainable living in response to the escalating climate crisis...</em></p>
+      <p><em>"The Alaska Energy Regeneration (AER) project is a statewide initiative aimed at advancing sustainable living in response to the escalating climate crisis..."</em></p>
       <p>Welcome to the AEI portal, your source for data, updates, and initiatives.</p>
 
       <div class="tab-buttons">
-        <button onclick="showTab('status')">Status</button>
+        <button onclick="showTab('reports')">Reports</button>
+        <button onclick="showTab('status')">Roadmap</button>
         <button onclick="showTab('background')">Background</button>
         <button onclick="showTab('preload')">Preload Data</button>
       </div>
 
-      <div id="status" class="tab-content active">
+      <div id="reports" class="tab-content">
+        <p>[Reports tab placeholder only]</p>
+      </div>
+
+      <div id="status" class="tab-content">
         <h2>Roadmap</h2>
         <p>[Overview of AEI status]</p>
       </div>
@@ -132,14 +126,14 @@
       </div>
 
       <div id="aern" class="tab-content">
-        <h3>AERN Login</h3>
+        <h2>AERN Login</h2>
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
       </div>
 
       <div id="contact" class="tab-content">
-        <h3>Contact</h3>
-        <p>[Contact form or details]</p>
+        <h2>Contact</h2>
+        <p>[Contact form placeholder]</p>
       </div>
     </div>
 
@@ -152,7 +146,8 @@
   <script>
     function showTab(id) {
       document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
+      const selected = document.getElementById(id);
+      if (selected) selected.classList.add('active');
     }
   </script>
 </body>
