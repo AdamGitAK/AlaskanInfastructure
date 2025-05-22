@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roadmap - Alaska Energy Infrastructure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/2/28/Windy_Bay_forest.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    .overlay {
+      backdrop-filter: blur(4px);
+      background-color: rgba(0, 50, 0, 0.3);
+      min-height: 100vh;
+      padding: 2em;
+    }
+    .nav {
+      background: rgba(0, 50, 0, 0.85);
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+    }
+    .nav a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .map-section {
+      display: flex;
+      justify-content: center;
+      margin: 2em 0;
+    }
+    .map-section img {
+      max-width: 600px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .calendar {
+      max-width: 900px;
+      margin: 2em auto;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      padding: 1em;
+      color: #000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1px;
+    }
+    .calendar-day {
+      background-color: rgba(255,255,255,0.9);
+      min-height: 100px;
+      padding: 0.5em;
+      position: relative;
+      border: 1px solid #ccc;
+    }
+    .calendar-day-number {
+      position: absolute;
+      top: 0.5em;
+      left: 0.5em;
+      font-size: 0.9em;
+      font-weight: bold;
+      color: #333;
+    }
+    .status-section {
+      max-width: 900px;
+      margin: 2em auto;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 2em;
+      border-radius: 12px;
+      text-align: center;
+      color: #000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav class="nav">
+      <a href="#">Home</a>
+    </nav>
+
+    <div class="map-section">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Map_of_Alaska.svg/800px-Map_of_Alaska.svg.png" alt="Map of Alaska with stars">
+    </div>
+
+    <div class="calendar">
+      <div class="calendar-header">
+        <button>&larr;</button>
+        <span>May 2025</span>
+        <button>&rarr;</button>
+      </div>
+      <div class="calendar-grid">
+        <!-- Example Days -->
+        <div class="calendar-day"><div class="calendar-day-number">1</div></div>
+        <div class="calendar-day"><div class="calendar-day-number">2</div></div>
+        <div class="calendar-day"><div class="calendar-day-number">3</div></div>
+        <div class="calendar-day"><div class="calendar-day-number">4</div></div>
+        <div class="calendar-day"><div class="calendar-day-number">5</div></div>
+        <div class="calendar-day"><div class="calendar-day-number">6</div></div>
+        <div class="calendar-day"><div class="calendar-day-number">7</div></div>
+        <!-- Fill in more days as needed -->
+      </div>
+    </div>
+
+    <div class="status-section">
+      <h2>AER 2025 Report Status</h2>
+      <p>[Insert project progress summary or tracker here]</p>
+    </div>
+  </div>
+</body>
+</html>
