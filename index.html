@@ -72,12 +72,20 @@
       max-width: 900px;
       flex-wrap: wrap;
     }
+    .photo-container {
+      text-align: center;
+      max-width: 280px;
+    }
     .photo-panel img {
       width: 100%;
-      max-width: 280px;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .photo-caption {
+      font-size: 0.75em;
+      color: #eee;
+      margin-top: 0.5em;
     }
     footer {
       text-align: center;
@@ -89,12 +97,12 @@
 <body>
   <div class="overlay">
     <nav class="nav">
-      <div>Alaska Energy Regeneration - Alaska Energy Infrastructure</div>
+      <div>Alaska Energy Infrastructure - Alaska Energy Regeneration Network</div>
     </nav>
 
     <div class="container">
       <h1>Alaska Energy Infrastructure</h1>
-      <p>Alaska Energy Regeneration (AER) is a bold initiative to bring sustainable, community-driven energy solutions to Alaska, including remote regions. Guided by Indigenous insight and real-time collaboration, AER will deliver actionable policy to the 2026 legislative session.</p>
+      <p>Alaska Energy Infrastructure (AEI) is a bold initiative to bring sustainable, community-driven energy solutions to Alaska, including remote regions. Guided by Indigenous insight and real-time collaboration, AEI will deliver actionable policy to the 2026 legislative session.</p>
     </div>
 
     <div class="tab-buttons">
@@ -106,14 +114,23 @@
     </div>
 
     <div class="photo-panel">
-      <img src="images/231113juneau_heat_pumps21.jpeg" alt="HeatPump">
-      <img src="images/Aerial_View_of_Salmon_Arch_dam_in_Juneau-830x615.jpeg" alt="SalmonArchDam">
-      <img src="images/Shungnak-Solar_Blue-Planet-Energy1000x750.jpeg" alt="SolarPanels">
+      <div class="photo-container">
+        <img src="images/231113juneau_heat_pumps21.jpeg" alt="HeatPump">
+        <div class="photo-caption">“Heat pump system outside a home in Juneau, Alaska” Earth Justice 11/21/2023 by Michael Penn</div>
+      </div>
+      <div class="photo-container">
+        <img src="images/Aerial_View_of_Salmon_Arch_dam_in_Juneau-830x615.jpeg" alt="SalmonArchDam">
+        <div class="photo-caption">”Salmon Creek Dam Alaska” Salmon Creek Dam, Wikipedia</div>
+      </div>
+      <div class="photo-container">
+        <img src="images/Shungnak-Solar_Blue-Planet-Energy1000x750.jpeg" alt="SolarPanels">
+        <div class="photo-caption">“Solar PV specially designed to catch rays north of the Arctic Circle” Homer Microgrid News Shugnak, Alaska 10/12/2022 FRANCKLYN by Blue Planet Energy</div>
+      </div>
     </div>
 
     <footer>
       <p>© 2025 Alaska Energy Infrastructure. All rights reserved.</p>
-      <p>This work was supported by Milton and Rosalind Chang Career Exploration Prize from Caltech | Designed Locally In Alaska</p>
+      <p>This work was supported by the Milton and Rosalind Chang Career Exploration Prize from Caltech | Designed Locally In Alaska</p>
     </footer>
   </div>
 </body>
