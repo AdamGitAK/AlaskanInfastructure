@@ -24,56 +24,60 @@
       background: rgba(0, 50, 0, 0.85);
       padding: 1em;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       border-radius: 10px;
     }
     .nav div {
       font-weight: bold;
       font-size: 1.2em;
-    }
-    .container {
-      margin: 2em auto;
-      background: rgba(255, 255, 255, 0.95);
-      color: #000;
-      padding: 2em;
-      border-radius: 16px;
-      max-width: 900px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+      text-align: center;
     }
     .tab-buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 1em;
-      margin-top: 2em;
+      margin: 2em auto;
+      justify-content: center;
+      max-width: 900px;
     }
-    .tab-buttons button {
+    .tab-buttons a {
+      display: inline-block;
       padding: 0.75em 1.5em;
-      border: none;
       border-radius: 8px;
       background-color: #2f6f2f;
       color: white;
       font-weight: bold;
-      cursor: pointer;
+      text-decoration: none;
       transition: background-color 0.3s;
     }
-    .tab-buttons button:hover {
+    .tab-buttons a:hover {
       background-color: #3a873a;
     }
-    .tab-content {
-      display: none;
-      margin-top: 1.5em;
+    .container {
+      margin: 2em auto;
+      background: rgba(255, 255, 255, 0.6);
+      color: #000;
+      padding: 2em;
+      border-radius: 16px;
+      max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
-    .tab-content.active {
-      display: block;
+    .photo-panel {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin: 3em auto;
+      max-width: 900px;
+      flex-wrap: wrap;
     }
-    input {
-      display: block;
-      margin: 0.75em 0;
-      padding: 0.75em;
+    .photo-panel img {
       width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      max-width: 280px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
     footer {
       text-align: center;
@@ -85,41 +89,26 @@
 <body>
   <div class="overlay">
     <nav class="nav">
-      <div>AEI</div>
+      <div>Alaska Energy Regeneration - Alaska Energy Infrastructure</div>
     </nav>
 
     <div class="container">
       <h1>Alaska Energy Infrastructure</h1>
-      <p>The Alaska Energy Regeneration (AER) project is a statewide initiative aimed at advancing sustainable living in response to the escalating climate crisis. Spanning 375 million acres and home to 740,000 residents across approximatly 200 communities, Alaska faces unique challenges in transitioning to renewable energy. AER will develop tailored, community-driven sustainability solutions through data collection, applied research, and policy development. Sustainability Assessments (SAs)—conducted via focus groups, surveys, and town halls with the guidance of Indigenous communities—will provide insights into existing practices and environmental needs. Findings will be shared in real time through the Alaska Energy Regeneration Network (AERN), a collaborative platform connecting residents, researchers, and decision-makers. A strong digital presence will support ongoing public engagement. The project will culminate in the Alaska Energy Regeneration 2025 Report, offering actionable, evidence-based policy alternatives ahead of the 2026 legislative session. AER invites collaboration from a wide range of stakeholders committed to a resilient, sustainable future for Alaska.</p>
+      <p>The Alaska Energy Regeneration (AER) project is a statewide initiative aimed at advancing sustainable living in response to the escalating climate crisis. Spanning 375 million acres and home to 740,000 residents across approximately 200 communities, Alaska faces unique challenges in transitioning to renewable energy. AER will develop tailored, community-driven sustainability solutions through data collection, applied research, and policy development. Sustainability Assessments (SAs)—conducted via focus groups, surveys, and town halls with the guidance of Indigenous communities—will provide insights into existing practices and environmental needs. Findings will be shared in real time through the Alaska Energy Regeneration Network (AERN), a collaborative platform connecting residents, researchers, and decision-makers. A strong digital presence will support ongoing public engagement. The project will culminate in the Alaska Energy Regeneration 2025 Report, offering actionable, evidence-based policy alternatives ahead of the 2026 legislative session. AER invites collaboration from a wide range of stakeholders committed to a resilient, sustainable future for Alaska.</p>
+    </div>
 
-      <div class="tab-buttons">
-        <button onclick="showTab('status')">Roadmap</button>
-        <button onclick="showTab('background')">Background</button>
-        <button onclick="showTab('project')">Project Description</button>
-        <button onclick="showTab('login')">AERN Login</button>
-        <button onclick="showTab('contact')">Contact</button>
-      </div>
+    <div class="tab-buttons">
+      <a href="#">Roadmap</a>
+      <a href="#">Background</a>
+      <a href="#">Project Description</a>
+      <a href="#">AERN Login</a>
+      <a href="#">Contact</a>
+    </div>
 
-      <div id="status" class="tab-content">
-        <h2>Roadmap</h2>
-        <p>[Overview of AEI status]</p>
-      </div>
-      <div id="background" class="tab-content">
-        <h2>Background</h2>
-        <p>[History and context]</p>
-      </div>
-      <div id="preload" class="tab-content">
-        <h2>Project Description</h2>
-        <p>[Quick data summaries]</p>
-      </div>
-      <div id="login" class="tab-content">
-        <h2>AERN Login</h2>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-      <div id="login" class="tab-content">
-        <h2>Contact/h2>
-        <p>[contact page]</p>
-      </div>
+    <div class="photo-panel">
+      <img src="https://via.placeholder.com/280x180?text=Photo+1" alt="Photo 1">
+      <img src="https://via.placeholder.com/280x180?text=Photo+2" alt="Photo 2">
+      <img src="https://via.placeholder.com/280x180?text=Photo+3" alt="Photo 3">
     </div>
 
     <footer>
@@ -127,12 +116,5 @@
       <p>Milton and Rosalind Chang Career Exploration Prize | Designed Locally In Alaska</p>
     </footer>
   </div>
-
-  <script>
-    function showTab(id) {
-      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
 </body>
 </html>
