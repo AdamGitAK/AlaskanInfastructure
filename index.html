@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alaska Energy Infrastructure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Temperate_rainforest_in_the_Pacific_Rim_National_Park.jpg/1280px-Temperate_rainforest_in_the_Pacific_Rim_National_Park.jpg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      color: #fff;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 2em;
+    }
+    .nav {
+      background: rgba(0, 50, 0, 0.85);
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 12px;
+    }
+    .nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      margin-top: 2em;
+      background: rgba(255, 255, 255, 0.95);
+      color: #000;
+      padding: 2em;
+      border-radius: 12px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    }
+    .tab-buttons {
+      display: flex;
+      gap: 1em;
+      margin-bottom: 1em;
+      flex-wrap: wrap;
+    }
+    .tab-buttons button {
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 8px;
+      background-color: #2f6f2f;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .tab-buttons button:hover {
+      background-color: #3d8041;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .login input {
+      display: block;
+      margin: 0.5em 0;
+      padding: 0.5em;
+      width: 100%;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav class="nav">
+      <div><strong>AEI</strong></div>
+      <div>
+        <a href="#" onclick="showTab('aern')">AERN Login</a>
+        <a href="#" onclick="showTab('contact')">Contact</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Alaska Energy Infrastructure</h1>
+      <p><em>"The Alaska Energy Regeneration (AER) project is a statewide initiative aimed at advancing sustainable living in response to the escalating climate crisis..."</em></p>
+      <p>Welcome to the AEI portal, your source for data, updates, and initiatives.</p>
+
+      <div class="tab-buttons">
+        <button onclick="showTab('reports')">Reports</button>
+        <button onclick="showTab('status')">Roadmap</button>
+        <button onclick="showTab('background')">Background</button>
+        <button onclick="showTab('preload')">Preload Data</button>
+      </div>
+
+      <div id="reports" class="tab-content">
+        <p>[Reports tab placeholder only]</p>
+      </div>
+
+      <div id="status" class="tab-content">
+        <h2>Roadmap</h2>
+        <p>[Overview of AEI status]</p>
+      </div>
+
+      <div id="background" class="tab-content">
+        <h2>Background</h2>
+        <p>[History and context]</p>
+      </div>
+
+      <div id="preload" class="tab-content">
+        <h2>Preloaded Data</h2>
+        <p>[Quick data summaries]</p>
+      </div>
+
+      <div id="aern" class="tab-content">
+        <h2>AERN Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+      </div>
+
+      <div id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>[Contact form placeholder]</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Alaska Energy Infrastructure. All rights reserved.</p>
+      <p>Milton and Rosalind Chang Career Exploration Prize | Designed locally in Alaska</p>
+    </footer>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      const selected = document.getElementById(id);
+      if (selected) selected.classList.add('active');
+    }
+  </script>
+</body>
+</html>
