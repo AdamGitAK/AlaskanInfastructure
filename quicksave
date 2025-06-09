@@ -191,18 +191,18 @@
       </figure>
       <div class="text-box-left">
         <h3>Geothermal</h3>
-        <p>This is a placeholder text box. Content related to renewable energy or local initiatives can go here.</p>
+        <p>Geothermal energy uses heat generated deep underground to heat water into steam, powering generators that produce electricity. Geothermal heat can also be directly used for heating and cooling buildings. Chena Hot springs generates a total capacity of 680 kW that runs on 165 degrees Fahrenheit water, the lowest temperature for an operating geothermal power plant in the world.</p>
       </div>
     </div>
 
     <div class="side-by-side">
       <figure>
-        <img src="images/placeholder.jpg" alt="Placeholder">
+        <img src="images/biomassanc.jpg" alt="Biomass">
         <figcaption>Placeholder for Biomass Image</figcaption>
       </figure>
       <div class="text-box-right">
         <h3>Biomass</h3>
-        <p>This is a placeholder text box. Content related to renewable energy or local initiatives can go here.</p>
+        <p>Biomass encompasses a number of processes that convert organic matter, such as plants and animal waste, into usable energy sources like heat, electricity, or fuel. These various methods include burning, bacterial decay, and chemical conversion processes. The municipality of Anchorage converts landfill waste into methane which is combusted into up to 7 MW of electricity.</p>
       </div>
     </div>
 
@@ -213,7 +213,7 @@
       </figure>
       <div class="text-box-left">
         <h3>Wave and Tidal Energy</h3>
-        <p>This is a placeholder text box. Content related to renewable energy or local initiatives can go here.</p>
+        <p>Wave energy utilizes the motion of ocean waves, while tidal energy utilizes the rise and fall of tides and tidal currents. Both technologies employ turbines or other mechanisms to convert the mechanical energy of the water into electricity.</p>
       </div>
     </div>
 
