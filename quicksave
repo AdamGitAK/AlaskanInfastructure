@@ -154,7 +154,7 @@
     <div class="side-by-side">
       <figure>
         <img src="images/Shungnak-Solar_Blue-Planet-Energy1000x750.jpeg" alt="SolarPanels">
-        <figcaption>Solar array in Shungnak, Alaska</figcaption>
+        <figcaption>"Solar array in Shungnak", Blue Planet Energy</figcaption>
       </figure>
       <div class="text-box-right">
         <h3>Solar Energy</h3>
@@ -165,7 +165,7 @@
     <div class="side-by-side">
       <figure>
         <img src="images/Aerial_View_of_Salmon_Arch_dam_in_Juneau-830x615.jpeg" alt="SalmonCreekDam">
-        <figcaption>”Salmon Creek Dam Alaska” Salmon Creek Dam, Wikipedia</figcaption>
+        <figcaption>”Salmon Creek Dam Alaska”, Wikipedia</figcaption>
       </figure>
       <div class="text-box-left">
         <h3>Hydroelectric</h3>
@@ -176,11 +176,11 @@
     <div class="side-by-side">
       <figure>
         <img src="images/Screenshot 2025-06-08 at 21.55.20.png" alt="WindTurbine">
-        <figcaption>"Fire Island Wind Farm" FireIslandWind, CIRI</figcaption>
+        <figcaption>"Fire Island Wind Farm", CIRI</figcaption>
       </figure>
       <div class="text-box-right">
         <h3>Wind Power</h3>
-        <p>Windmills have been in use for centuries to power grain mills. Modern wind technology employs turbines that capture the kinetic energy of air currents with spinning blades to generate electricity. In Southcentral Alaska, on Fire Island or Natul’iv in Dena’ina Athabascan, an 11 turbine system provides energy for over 7000 homes.</p>
+        <p>Windmills have been in use for centuries to power grain mills. Modern wind technology employs turbines that capture the kinetic energy of air currents with spinning blades to generate electricity. Offshore wind in particular has the potential to capture almost 80 TWH/yr, almost 15 times more than current consumption of 5.2 TWH/yr. In Southcentral Alaska, on Fire Island (Natul’iv in Dena’ina Athabascan) an 11 turbine system provides energy for over 7000 homes.</p>
       </div>
     </div>
 
@@ -198,7 +198,7 @@
     <div class="side-by-side">
       <figure>
         <img src="images/biomassanc.jpg" alt="Biomass">
-        <figcaption>Placeholder for Biomass Image</figcaption>
+        <figcaption>"Capture of gas due to decomposition, incinerator", MUNI</figcaption>
       </figure>
       <div class="text-box-right">
         <h3>Biomass</h3>
@@ -208,8 +208,8 @@
 
     <div class="side-by-side">
       <figure>
-        <img src="images/placeholder.jpg" alt="Placeholder">
-        <figcaption>Placeholder for Wave and Tidal Image</figcaption>
+        <img src="images/202110-cook-inlet-181.jpg" alt="TidalTesting">
+        <figcaption>"NREL Cook Inlet Testing", NREL</figcaption>
       </figure>
       <div class="text-box-left">
         <h3>Wave and Tidal Energy</h3>
