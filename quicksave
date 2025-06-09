@@ -148,7 +148,7 @@
 
     <div class="highlight-box">
       <h2>Renewable Energy Explained</h2>
-      <p>Renewable energy is power that is gathered from natural phenomena, like tidal motion or the sun. Renewables typically do not involve the removal of resources from the environment, or infrastructure that has a permanent effect on the environment. Examples include wind, solar, geothermal, and hydroelectric power.</p>
+      <p class="intro-paragraph">Renewable energy is power that is gathered from natural phenomena, like tidal motion or the sun. Renewables typically do not involve the removal of resources from the environment, or infrastructure that has a permanent effect on the environment. Examples include wind, solar, geothermal, and hydroelectric power.</p>
     </div>
 
     <div class="side-by-side">
