@@ -165,7 +165,7 @@
     <div class="side-by-side">
       <figure>
         <img src="images/Aerial_View_of_Salmon_Arch_dam_in_Juneau-830x615.jpeg" alt="SalmonCreekDam">
-        <figcaption>Salmon Creek Dam, Juneau</figcaption>
+        <figcaption>”Salmon Creek Dam Alaska” Salmon Creek Dam, Wikipedia</figcaption>
       </figure>
       <div class="text-box-left">
         <h3>Hydroelectric</h3>
@@ -176,7 +176,7 @@
     <div class="side-by-side">
       <figure>
         <img src="images/Screenshot 2025-06-08 at 21.55.20.png" alt="WindTurbine">
-        <figcaption>Fire Island Wind Farm, Alaska</figcaption>
+        <figcaption>"Fire Island Wind Farm" FireIslandWind, CIRI</figcaption>
       </figure>
       <div class="text-box-right">
         <h3>Wind Power</h3>
@@ -186,8 +186,8 @@
 
     <div class="side-by-side">
       <figure>
-        <img src="images/placeholder.jpg" alt="Placeholder">
-        <figcaption>Placeholder for Geothermal Image</figcaption>
+        <img src="images/geothemral147Chena.jpg" alt="ChenaGeothermal">
+        <figcaption>"Chena Hot Springs Geothermal", Energy-Alaska</figcaption>
       </figure>
       <div class="text-box-left">
         <h3>Geothermal</h3>
