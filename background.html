@@ -3,62 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Background | Alaskan Energy Infrastructure</title>
+  <title>Background </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Times New Roman', Times, serif !important;
       background: url('https://upload.wikimedia.org/wikipedia/commons/2/28/Windy_Bay_forest.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
     }
     .overlay {
-      backdrop-filter: blur(6px);
+      /*backdrop-filter: blur(6px);*/
       background-color: rgba(0, 50, 0, 0.4);
       min-height: 100vh;
       padding: 2em;
+      font-family: 'Times New Roman', Times, serif !important;
     }
     .nav {
       background: rgba(0, 50, 0, 0.85);
-      padding: 1em;
+      padding: 1.2em;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-radius: 10px;
+      font-family: 'Times New Roman', Times, serif !important;
     }
     .nav .home {
       font-weight: bold;
       font-size: 1.2em;
       color: #fff;
       text-decoration: none;
+      font-family: 'Times New Roman', Times, serif !important;
     }
     .container {
       margin: 2em auto;
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.75);
       color: #000;
       padding: 2em;
       border-radius: 16px;
       max-width: 900px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-family: 'Times New Roman', Times, serif !important;
     }
-    .project-title {
-      font-size: 1.8em;
+    .whyAEI-title {
+      font-size: 1.2em;
       font-weight: bold;
       margin: 1em 0;
-      text-align: center;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif !important;
     }
-    .section-title {
-      text-align: center;
-      font-size: 1.3em;
+    
+    .whyAEI {
+      text-align: left;
+      margin-bottom: 3em;
+      font-size: 1.2em;
+      font-family: 'Times New Roman', Times, serif !important;
+    }
+    .summary-title {
+      font-size: 1.2em;
       font-weight: bold;
-      margin-bottom: 1em;
+      margin: 1em 0;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif !important;
     }
     .summary {
-      text-align: center;
+      text-align: left;
       margin-bottom: 3em;
+      font-size: 1.2em;
+      font-family: 'Times New Roman', Times, serif !important;
     }
+
+    .principles-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 1em 0;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif !important;
+    }
+    
+    .bullets1-img {
+      max-width: 200px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-family: 'Times New Roman', Times, serif !important;
+    }
+    
+    .bullets2-img {
+      max-width: 200px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-family: 'Times New Roman', Times, serif !important;
+    }
+    
+    .bullets3-img {
+      max-width: 200px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-family: 'Times New Roman', Times, serif !important;
+    }
+    
     .profile-section {
       display: flex;
       flex-wrap: wrap;
@@ -66,12 +114,15 @@
       justify-content: center;
       align-items: flex-start;
       margin-top: 3em;
+      font-family: 'Times New Roman', Times, serif !important;
     }
+
     .profile-img {
       max-width: 200px;
       width: 100%;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-family: 'Times New Roman', Times, serif !important;
     }
     .profile-text {
       flex: 1;
@@ -79,19 +130,59 @@
       display: flex;
       flex-direction: column;
       gap: 1em;
+      font-family: 'Times New Roman', Times, serif !important;
     }
     .profile-text div {
       background: rgba(255, 255, 255, 0.8);
       padding: 1em;
       border-radius: 10px;
+      font-family: 'Times New Roman', Times, serif !important;
     }
     .profile-text h3 {
       margin-top: 0;
+      font-family: 'Times New Roman', Times, serif !important;
     }
+    .side-by-side {
+      display: flex;
+      gap: 2em;
+      margin: 2em auto;
+      max-width: 900px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+   
+    }
+    figure {
+      margin: 0;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    figcaption {
+      font-size: 0.75em;
+      color: #eee;
+      margin-top: 0.5em;
+    }
+    .text-box-right, .text-box-left {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.7);
+      color: #000;
+      padding: 1.5em;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    
     footer {
       text-align: center;
       padding: 2em 0;
       color: #ccc;
+      font-family: 'Times New Roman', Times, serif !important;
     }
   </style>
 </head>
@@ -102,25 +193,126 @@
     </nav>
 
     <div class="container">
-      <div class="summary">
-        <h1>Alaskan Energy Infrastructure (AEI) : Advancing Community Driven Renewable Energy</h1>
-        <div class="project-title">Project Summary</div>
+      <div class="whyAEI">
+        <h2>Background</h2>
+        <div class="whyAEI-title">Why Alaskan Energy Infrastructure (AEI)?</div>
         <p>
-          The Alaskan Energy Infrastructure (AEI) project is a statewide initiative—spanning urban, remote, and energy-challenged communities—designed to accelerate the transition to long-lasting, renewable energy infrastructure. In a state covering over 375 million acres and home to approximately 740,000 residents across more than 200 diverse communities, achieving energy stability in Alaska presents unique challenges. Many communities remain disconnected from centralized energy grids and face severe climate adaptation pressures. As such, the development of stable energy systems must be adaptable, collaborative, and grounded in data.
+          Alaska’s energy system is still dominated by oil and gas, with petroleum historically supplying most electricity. 
+          Since 2010, renewable generation has expanded, but the petroleum industry continues to shape state policy, federal influence, and voter expectations. 
+          The Alaska Energy Infrastructure (AEI) project addresses this challenge by advancing common-sense renewable energy solutions that lower costs, 
+          create jobs, and build long-term resilience.
         </p>
         <p>
-          Just as Alaska once achieved long-term energy security through oil and gas, it now faces the opportunity—and responsibility—to build new energy infrastructure that ensures the same level of resilience for future generations.
+          AEI emphasizes that investing in renewables will reduce household energy expenses, strengthen local job markets, and protect key industries such as 
+          fishing and tourism from the impacts of climate change. These gains extend beyond energy: lower costs improve quality of life while stabilizing revenue 
+          streams for education, healthcare, and housing. AEI will evaluate sustainable living practices and provide data driven insights to address systemic environmental challenges.
+        </p>
+        <p> By grounding proposals in data and tailoring projects to the needs of Alaska’s diverse regions, AEI presents renewable energy as the practical path
+          to energy independence and economic prosperity. Shifting from dependence on out-of-state petroleum profits to resilient, locally driven infrastructure ensures a more sustainable 
+          future for Alaskan communities.
+        </p>
+        <p> Just as Alaska once achieved long-term energy security through oil and gas, it now faces the opportunity—and responsibility—to build new energy infrastructure 
+          that ensures the same level of resilience for future generations. </p>
+      </div>
+
+      <div class="summary">
+        <div class="summary-title">Alaskan Energy Infrastructure (AEI) Summary</div>
+        <p>
+          The Alaskan Energy Infrastructure (AEI) project is a statewide initiative—spanning urban, remote, and energy-challenged communities—designed to accelerate the transition 
+          to long-lasting, renewable energy infrastructure. In a state covering over 375 million acres and home to approximately 740,000 residents across more than 200 diverse communities, 
+          achieving energy stability in Alaska presents unique challenges. Many communities remain disconnected from centralized energy grids and face severe climate adaptation pressures. 
+          As such, the development of stable energy systems must be adaptable, collaborative, and grounded in data. 
+        </p>
+        <p> 
+          In the face of the current climate crisis, advancing sustainable living — particularly in Alaska — has never been more urgent. 
+          The Alaska Energy Infrastructure (AEI) project will investigate sustainable living solutions tailored to each community. 
+          Through design and execution of the AEI project, stakeholder feedback will be gathered, to foster cross-community collaboration, 
+          and develop evidence-based policy alternatives to drive meaningful change. 
+        </p>
+        <p>
+          To assess the transition to sustainable living, the Alaska Energy Infrastructure (AEI) project will conduct population surveys 
+          across all of Alaska’s boroughs and census areas. The surveys are informed by experts, advocates, executive interviews, and 
+          research of what is possible in each area. 
+        </p>
+        <p>
+          Simultaneously, Alaska Energy Regeneration Network (AERN) will share findings in real time by fostering a network of engaged individuals 
+          and organizations. Beginning this fall AEI will begin to engage online, with community bulletins, and in print media to engage to inform 
+          Alaskans and generate support.  
+        </p>
+        <p> Finally, the Alaska Energy Infrastructure 2025 Report (AEI 2025 Report) and its policy alternatives will be published on the AERN, this webpage, 
+          as well as distributed amongst stakeholders by December 2025. The report will help inform the public and environmental advocacy groups about 
+          policy alternatives ahead of the 2026 legislative sessions. 
+        </p>
+        <p>
+          Alaska’s energy system is still dominated by oil and gas, with petroleum historically supplying most electricity. Since 2010, renewable generation has expanded, 
+          but the petroleum industry continues to shape state policy, federal influence, and voter expectations. The Alaska Energy Infrastructure (AEI) project addresses 
+          this challenge by advancing common-sense renewable energy solutions that lower costs, create jobs, and build long-term resilience. 
+        </p>
+        <p>
+          AEI emphasizes that investing in renewables will reduce household energy expenses, strengthen local job markets, and protect key industries such as fishing and tourism 
+          from the impacts of climate change. These gains extend beyond energy: lower costs improve quality of life while stabilizing revenue streams for education, healthcare, and housing. 
+          AEI will evaluate sustainable living practices and provide data driven insights to address systemic environmental challenges. 
+        </p>
+        <p>
+          By grounding proposals in data and tailoring projects to the needs of Alaska’s diverse regions, AEI presents renewable energy as the practical path to energy independence and 
+          economic prosperity. Shifting from dependence on out-of-state petroleum profits to resilient, locally driven infrastructure ensures a more sustainable future for Alaskan communities. 
+        </p>
+        <p>Just as Alaska once achieved long-term energy security through oil and gas, it now faces the opportunity—and responsibility—to build new energy infrastructure that 
+          ensures the same level of resilience for future generations. 
         </p>
       </div>
 
-      <div class="section-title">
-        <p>
-        Ariel Hasse-Zamudio
-        </p>
-        <p>
-        Executive Director
-        </p>
+    
+      
+    <div class="principles-title">AEI Principles and Strategy</div>
+    <div class="container">
+      <div class="side-by-side">
+        <figure>
+          <img src="images/bullets1.jpg" alt="Bullets1" class="bullets1-img">
+          <figcaption>"Solar array in Shungnak", Blue Planet Energy</figcaption>
+        </figure>
+        <div class="text-box-right">
+          <h3>AERN</h3>
+          <p>
+            Assess the past, present, and future of renewable energy infrastructure and energy 
+            communities across Alaska, while fostering collaboration and engagement through the 
+            Alaska Energy Regeneration Network (AERN). 
+          </p>
+        </div>
       </div>
+      
+       <div class="side-by-side">
+        <figure>
+          <img src="images/bullets2.jpg" alt="Bullets2" class="bullets2-img">
+          <figcaption>AEI 2025 Report</figcaption>
+        </figure>
+        <div class="text-box-right">
+          <h3>AEI 2025 Report</h3>
+          <p>
+            Develop and disseminate the Alaska Energy Infrastructure 2025 Report (AEI 2025 Report) 
+            to provide stakeholders and policymakers with actionable insights and comprehensive context 
+            on renewable energy infrastructure across Alaska, supporting informed decision-making and strategic planning.
+          </p>
+        </div>
+      </div>
+      <div class="side-by-side">
+        <figure>
+          <img src="images/bullets3.jpg" alt="Bullets3" class="bullets3-img">
+          <figcaption>Legislation</figcaption>
+        </figure>
+        <div class="text-box-right">
+          <h3>Legislation</h3>
+          <p>
+            Utilize insights from the AEI 2025 Report, the AERN, and extensive engagement with Alaskans 
+            to inform and shape evidence-based policy approaches in preparation for the 2026 legislative 
+            session.
+          </p>
+        </div>
+      </div>
+
+      
+    </div>
+      
 
       <div class="profile-section">
         <img src="images/headshotfinal-2.jpg" alt="Profile Picture" class="profile-img">
@@ -149,3 +341,4 @@ The project will culminate in the publication of a report aimed at environmental
   </div>
 </body>
 </html>
+
